@@ -1,0 +1,22 @@
+{
+  "sandbox": {
+    "project_name": "zappa-proj",
+    "aws_region": "eu-west-1",
+    "django_settings": "djangoproj.djangoproj.settings",
+    "profile_name": "profile1",
+    "runtime": "python3.8",
+    "s3_bucket": "zappa-template-code",
+    "events": [
+
+    ],
+    "vpc_config": {
+      "SubnetIds": [
+        "subnet-15867e73",
+        "subnet-8d3ef1c5"
+      ],
+      "SecurityGroupIds": [
+        "sg-01018e7b"
+      ]
+    }
+  }
+}

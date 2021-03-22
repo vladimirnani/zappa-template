@@ -1,0 +1,4 @@
+- name: deploy_sandbox
+  service: sandbox
+  tag: sandbox
+  command: python deploy.py sandbox

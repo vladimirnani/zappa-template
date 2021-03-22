@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sandbox:
+    build:
+      context: .
+      dockerfile: docker/cd/Dockerfile
+    cached: true
+    volumes:
+      - '.:/var/task'
+    encrypted_env_file:
+      - ./.env.sandbox.encrypted
