@@ -1,4 +1,4 @@
-zappa-template
+# Zappa project template with Codeship CD
 
 
 ##  Guide
