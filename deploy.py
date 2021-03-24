@@ -4,7 +4,7 @@ import sys
 stage_name = sys.argv[1]
 
 
-def dump_dot_env():
+def dump_dotenv():
     name = f".env.{stage_name}"
     with open(name, "w") as f:
         lines = []
@@ -13,7 +13,7 @@ def dump_dot_env():
         f.writelines(lines)
 
 
-dump_dot_env()
+dump_dotenv()
 
 os.system('aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile profile1')
 os.system('aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile profile1')
